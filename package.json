@@ -1,0 +1,21 @@
+{
+  "name": "qt-mobile-appium-runner",
+  "version": "1.0.0",
+  "description": "Lightweight Appium-based mobile app automation runner for Android and iOS",
+  "main": "index.js",
+  "scripts": {
+    "test:android": "mocha tests/android.spec.js --timeout 60000",
+    "test:ios": "mocha tests/ios.spec.js --timeout 60000",
+    "test:parallel": "mocha tests/*.spec.js --timeout 60000 --parallel"
+  },
+  "keywords": ["appium", "mobile-automation", "android", "ios", "testing"],
+  "license": "MIT",
+  "dependencies": {
+    "appium": "^2.5.0",
+    "webdriverio": "^8.15.0",
+    "chai": "^4.3.7"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
